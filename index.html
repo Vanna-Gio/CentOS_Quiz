@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Master English: Interactive Learning Journey</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+     <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-100 min-h-screen flex flex-col">
+    <header class="nav-container">
+        <nav class="flex items-center space-x-4">
+            <a href="#" id="homeLink" class="text-gray-700 hover:text-blue-600 font-semibold">Home</a>
+            <a href="#" id="aboutLink" class="text-gray-700 hover:text-blue-600 font-semibold">About</a>
+            <a href="#" id="contactLink" class="text-gray-700 hover:text-blue-600 font-semibold">Contact</a>
+            <a href="#" id="resourcesLink" class="text-gray-700 hover:text-blue-600 font-semibold">Resources</a>
+        </nav>
+    </header>
+
+    <main class="flex-grow">
+        <h1 class="text-center my-6 text-blue-800">Master English: Your Interactive Learning Journey</h1>
+
+        <div id="modeSelection" class="container">
+            <h2 class="text-blue-600 mb-6">Choose Your Learning Mode</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Only these two buttons will be displayed -->
+                <button class="btn btn-primary p-4 text-xl shadow-lg hover:shadow-xl transition-all duration-200 sub-menu-btn" data-mode="listen-type">👂 Listen & Type</button>
+                <button class="btn btn-success p-4 text-xl shadow-lg hover:shadow-xl transition-all duration-200 sub-menu-btn" data-mode="allListenAndType">🔗 All Listen And Type</button>
+            </div>
+        </div>
+
+        <div id="gameArea" class="container hidden">
+            <!-- Game content will be rendered here -->
+        </div>
+    </main>
+ <script src="script.js"></script>
+</body>
+</html>
